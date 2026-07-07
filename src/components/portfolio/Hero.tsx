@@ -57,9 +57,9 @@ function AIVisual() {
             key={tag}
             className="glass absolute rounded-full px-3 py-1 text-xs font-medium"
             style={{
-              left: `${50 + 48 * Math.cos(angle)}%`,
-              top: `${50 + 48 * Math.sin(angle)}%`,
-              transform: "translate(-50%,-50%)",
+              left: `${(50 + 48 * Math.cos(angle)).toFixed(2)}%`,
+              top: `${(50 + 48 * Math.sin(angle)).toFixed(2)}%`,
+              transform: "translate(-50%, -50%)",
             }}
             animate={{ y: [-6, 6, -6] }}
             transition={{ duration: 4 + idx, repeat: Infinity, ease: "easeInOut" }}
