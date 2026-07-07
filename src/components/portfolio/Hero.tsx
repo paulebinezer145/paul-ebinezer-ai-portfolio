@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Download, Mail, Sparkles } from "lucide-react";
+import { ArrowRight, Download, Mail } from "lucide-react";
 import { MagneticButton, Counter } from "./ui";
+import portrait from "@/assets/paul-portrait.png";
 
 const roles = ["Machine Learning Engineer", "Data Scientist", "AI Solutions Builder"];
 
