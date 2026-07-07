@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Download, Mail } from "lucide-react";
 import { MagneticButton, Counter } from "./ui";
-import paulPhoto from "@/assets/paul.png.asset.json";
+import paulPhoto from "@/assets/paul-enhanced.png";
 
 const roles = ["Machine Learning Engineer", "Data Scientist", "AI Solutions Builder"];
 
@@ -45,14 +45,21 @@ function AIVisual() {
       ))}
 
       {/* Red accent shape + portrait */}
-      <div className="absolute inset-[10%] grid place-items-center">
-        <div className="relative h-full w-full">
-          <div className="absolute inset-0 rounded-[42%_58%_58%_42%/45%_45%_55%_55%] bg-primary shadow-[0_0_60px_var(--glow)]" />
-          <img
-            src={paulPhoto.url}
-            alt="Paul Ebinezer, Data Scientist and Machine Learning Engineer"
-            className="absolute inset-0 h-full w-full object-contain object-bottom drop-shadow-2xl"
-          />
+      <div className="absolute inset-[8%] grid place-items-center">
+        <div className="group relative h-full w-full">
+          {/* Glowing gradient backdrop */}
+          <div className="absolute inset-0 rounded-[38%_62%_58%_42%/48%_42%_58%_52%] bg-[conic-gradient(from_140deg,var(--primary),color-mix(in_oklab,var(--primary)_60%,black),var(--primary))] shadow-[0_0_80px_var(--glow)] blur-[2px] transition-transform duration-700 group-hover:scale-105" />
+          {/* Frosted ring frame */}
+          <div className="absolute inset-[3%] overflow-hidden rounded-[38%_62%_58%_42%/48%_42%_58%_52%] border border-white/20 bg-black/20 backdrop-blur-sm">
+            <img
+              src={paulPhoto}
+              alt="Paul Ebinezer, Data Scientist and Machine Learning Engineer"
+              className="absolute inset-0 h-full w-full scale-105 object-cover object-top saturate-[1.05] contrast-[1.05] drop-shadow-2xl transition-transform duration-700 group-hover:scale-110"
+            />
+            {/* Subtle top light + bottom fade */}
+            <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(120%_60%_at_50%_-10%,color-mix(in_oklab,white_18%,transparent),transparent_60%)]" />
+            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/40 to-transparent" />
+          </div>
         </div>
       </div>
 
