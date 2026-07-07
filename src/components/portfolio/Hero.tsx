@@ -44,21 +44,18 @@ function AIVisual() {
         </motion.div>
       ))}
 
-      {/* Red accent shape + portrait */}
+      {/* Portrait with clean red backdrop */}
       <div className="absolute inset-[8%] grid place-items-center">
         <div className="group relative h-full w-full">
-          {/* Glowing gradient backdrop */}
-          <div className="absolute inset-0 rounded-[38%_62%_58%_42%/48%_42%_58%_52%] bg-[conic-gradient(from_140deg,var(--primary),color-mix(in_oklab,var(--primary)_60%,black),var(--primary))] shadow-[0_0_80px_var(--glow)] blur-[2px] transition-transform duration-700 group-hover:scale-105" />
-          {/* Frosted ring frame */}
-          <div className="absolute inset-[3%] overflow-hidden rounded-[38%_62%_58%_42%/48%_42%_58%_52%] border border-white/20 bg-black/20 backdrop-blur-sm">
+          {/* Solid red squircle shape — matches reference style */}
+          <div className="absolute inset-0 rounded-[38%_62%_58%_42%/48%_42%_58%_52%] bg-[#c41e3a] shadow-[0_0_60px_rgba(196,30,58,0.35)] transition-transform duration-700 group-hover:scale-105" />
+          {/* Clean frame with white border */}
+          <div className="absolute inset-[3%] overflow-hidden rounded-[38%_62%_58%_42%/48%_42%_58%_52%] border-[3px] border-white/90">
             <img
               src={paulPhoto}
               alt="Paul Ebinezer, Data Scientist and Machine Learning Engineer"
-              className="absolute inset-0 h-full w-full object-cover object-[50%_12%] saturate-[1.05] contrast-[1.05] drop-shadow-2xl transition-transform duration-700 group-hover:scale-105"
+              className="absolute inset-0 h-full w-full object-cover object-[50%_12%] saturate-[1.05] contrast-[1.05] transition-transform duration-700 group-hover:scale-105"
             />
-            {/* Subtle top light + bottom fade */}
-            <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(120%_60%_at_50%_-10%,color-mix(in_oklab,white_18%,transparent),transparent_60%)]" />
-            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/40 to-transparent" />
           </div>
         </div>
       </div>
