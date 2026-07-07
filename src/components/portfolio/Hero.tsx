@@ -54,7 +54,7 @@ function AIVisual() {
             <img
               src={paulPhoto}
               alt="Paul Ebinezer, Data Scientist and Machine Learning Engineer"
-              className="absolute inset-0 h-full w-full scale-105 object-cover object-top saturate-[1.05] contrast-[1.05] drop-shadow-2xl transition-transform duration-700 group-hover:scale-110"
+              className="absolute inset-0 h-full w-full object-cover object-[50%_20%] saturate-[1.05] contrast-[1.05] drop-shadow-2xl transition-transform duration-700 group-hover:scale-105"
             />
             {/* Subtle top light + bottom fade */}
             <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(120%_60%_at_50%_-10%,color-mix(in_oklab,white_18%,transparent),transparent_60%)]" />
