@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Download, Mail, Sparkles } from "lucide-react";
+import { ArrowRight, Download, Mail } from "lucide-react";
 import { MagneticButton, Counter } from "./ui";
+import paulPhoto from "@/assets/paul.png.asset.json";
 
 const roles = ["Machine Learning Engineer", "Data Scientist", "AI Solutions Builder"];
 
@@ -26,39 +27,44 @@ function useTyping(words: string[]) {
   return text;
 }
 
-// Orbiting AI brain / neural visual for the hero right side.
+// Portrait visual with red accent shape and orbiting tech tags for the hero.
 function AIVisual() {
   return (
     <div className="relative mx-auto aspect-square w-full max-w-md">
       <div className="absolute inset-0 rounded-full bg-[radial-gradient(closest-side,var(--glow-soft),transparent)] blur-2xl pulse-glow" />
-      {[0, 1, 2].map((ring) => (
+      {[0, 1].map((ring) => (
         <motion.div
           key={ring}
-          className="absolute inset-0 rounded-full border border-white/10"
-          style={{ inset: `${ring * 12}%` }}
+          className="absolute rounded-full border border-white/10"
+          style={{ inset: `${ring * 8}%` }}
           animate={{ rotate: ring % 2 === 0 ? 360 : -360 }}
-          transition={{ duration: 24 + ring * 8, repeat: Infinity, ease: "linear" }}
+          transition={{ duration: 26 + ring * 8, repeat: Infinity, ease: "linear" }}
         >
           <span className="absolute left-1/2 top-0 h-2.5 w-2.5 -translate-x-1/2 rounded-full bg-[color-mix(in_oklab,var(--glow)_90%,white)] shadow-[0_0_16px_var(--glow)]" />
-          <span className="absolute bottom-0 left-1/2 h-2 w-2 -translate-x-1/2 rounded-full bg-white/70" />
         </motion.div>
       ))}
-      <motion.div
-        animate={{ y: [-8, 8, -8] }}
-        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute inset-[26%] grid place-items-center rounded-full glass-strong glow-border"
-      >
-        <Sparkles className="h-14 w-14 text-[color-mix(in_oklab,var(--glow)_85%,white)]" />
-      </motion.div>
+
+      {/* Red accent shape + portrait */}
+      <div className="absolute inset-[10%] grid place-items-center">
+        <div className="relative h-full w-full">
+          <div className="absolute inset-0 rounded-[42%_58%_58%_42%/45%_45%_55%_55%] bg-primary shadow-[0_0_60px_var(--glow)]" />
+          <img
+            src={paulPhoto.url}
+            alt="Paul Ebinezer, Data Scientist and Machine Learning Engineer"
+            className="absolute inset-0 h-full w-full object-contain object-bottom drop-shadow-2xl"
+          />
+        </div>
+      </div>
+
       {["Python", "PyTorch", "SQL", "AWS", "ML", "NLP"].map((tag, idx) => {
         const angle = (idx / 6) * Math.PI * 2;
         return (
           <motion.span
             key={tag}
-            className="glass absolute rounded-full px-3 py-1 text-xs font-medium"
+            className="glass absolute z-10 rounded-full px-3 py-1 text-xs font-medium"
             style={{
-              left: `${(50 + 48 * Math.cos(angle)).toFixed(2)}%`,
-              top: `${(50 + 48 * Math.sin(angle)).toFixed(2)}%`,
+              left: `${(50 + 50 * Math.cos(angle)).toFixed(2)}%`,
+              top: `${(50 + 50 * Math.sin(angle)).toFixed(2)}%`,
               transform: "translate(-50%, -50%)",
             }}
             animate={{ y: [-6, 6, -6] }}
