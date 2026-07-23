@@ -28,7 +28,7 @@ function useTyping(words: string[]) {
 }
 
 // Portrait visual with red accent shape and orbiting tech tags for the hero.
-function AIVisual() {
+function HeroVisual() {
   return (
     <div className="relative mx-auto aspect-square w-full max-w-md">
       <div className="absolute inset-0 rounded-full bg-[radial-gradient(closest-side,var(--glow-soft),transparent)] blur-2xl pulse-glow" />
@@ -126,7 +126,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.25 }}
             className="mt-6 max-w-lg text-base leading-relaxed text-muted-foreground"
           >
-            Building intelligent AI-powered solutions through Machine Learning, Data Science, and
+            Building intelligent data-driven solutions through Machine Learning, Data Science, and
             modern software engineering to solve real-world challenges.
           </motion.p>
 
@@ -168,7 +168,7 @@ export function Hero() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.9, delay: 0.2 }}
         >
-          <AIVisual />
+          <HeroVisual />
         </motion.div>
       </div>
     </section>

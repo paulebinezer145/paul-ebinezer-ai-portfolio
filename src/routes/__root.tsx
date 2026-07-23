@@ -81,13 +81,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Portfolio of Paul Ebinezer showcasing Data Science, Machine Learning, AI projects, technical skills, certifications, education, and professional portfolio.",
+          "Portfolio of Paul Ebinezer showcasing Data Science and Machine Learning projects, technical skills, certifications, education, and professional portfolio.",
       },
       { name: "author", content: "Paul Ebinezer" },
       { property: "og:title", content: "Paul Ebinezer | Data Scientist & Machine Learning Engineer" },
       {
         property: "og:description",
-        content: "Premium AI & Data Science portfolio of Paul Ebinezer.",
+        content: "Premium Data Science & Machine Learning portfolio of Paul Ebinezer.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

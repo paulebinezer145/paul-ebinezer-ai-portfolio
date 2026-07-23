@@ -21,13 +21,13 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Portfolio of Paul Ebinezer showcasing Data Science, Machine Learning, AI projects, technical skills, certifications, education, and professional portfolio.",
+          "Portfolio of Paul Ebinezer showcasing Data Science and Machine Learning projects, technical skills, certifications, education, and professional portfolio.",
       },
       { property: "og:title", content: "Paul Ebinezer | Data Scientist & Machine Learning Engineer" },
       {
         property: "og:description",
         content:
-          "Premium AI & Data Science portfolio — projects, skills, certifications and more.",
+          "Premium Data Science & Machine Learning portfolio — projects, skills, certifications and more.",
       },
       { property: "og:type", content: "website" },
     ],

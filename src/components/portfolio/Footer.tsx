@@ -11,7 +11,7 @@ export function Footer() {
               Paul Ebinezer
             </div>
             <p className="mt-3 max-w-xs text-sm text-muted-foreground">
-              Data Scientist & Machine Learning Engineer building intelligent, AI-powered solutions.
+              Data Scientist & Machine Learning Engineer building intelligent, data-driven solutions.
             </p>
           </div>
           <div>
