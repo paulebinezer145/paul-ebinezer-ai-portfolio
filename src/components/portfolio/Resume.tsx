@@ -1,5 +1,7 @@
 import { Reveal, SectionHeading, GlassCard, MagneticButton } from "./ui";
 import { Download, FileText, ShieldCheck, Eye } from "lucide-react";
+import resumeAsset from "@/assets/paul-resume.docx.asset.json";
+
 
 export function Resume() {
   return (
@@ -29,12 +31,13 @@ export function Resume() {
                 in browser.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
-                <MagneticButton href="#" variant="primary">
+                <MagneticButton href={resumeAsset.url} variant="primary">
                   <Download className="h-4 w-4" /> Download Resume
                 </MagneticButton>
-                <MagneticButton href="#" variant="outline">
+                <MagneticButton href={resumeAsset.url} variant="outline">
                   <Eye className="h-4 w-4" /> Preview
                 </MagneticButton>
+
               </div>
             </div>
           </GlassCard>
