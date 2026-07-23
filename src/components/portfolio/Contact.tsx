@@ -4,11 +4,11 @@ import { Github, Linkedin, Mail, Send, CheckCircle2, Code2, Trophy } from "lucid
 import { Reveal, SectionHeading, GlassCard } from "./ui";
 
 const socials = [
-  { icon: Github, label: "GitHub", href: "#" },
-  { icon: Linkedin, label: "LinkedIn", href: "#" },
+  { icon: Github, label: "GitHub", href: "https://github.com/paulebinezer145" },
+  { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/in/paulebinezer" },
   { icon: Trophy, label: "Kaggle", href: "#" },
   { icon: Code2, label: "LeetCode", href: "#" },
-  { icon: Mail, label: "Email", href: "mailto:hello@example.com" },
+  { icon: Mail, label: "Email", href: "mailto:j.paulebinezer@gmail.com" },
 ];
 
 export function Contact() {
@@ -42,6 +42,8 @@ export function Contact() {
                   <a
                     key={s.label}
                     href={s.href}
+                    target={s.href.startsWith("http") ? "_blank" : undefined}
+                    rel={s.href.startsWith("http") ? "noopener noreferrer" : undefined}
                     aria-label={s.label}
                     className="grid h-11 w-11 place-items-center rounded-xl glass transition-colors hover:border-[color-mix(in_oklab,var(--glow)_50%,transparent)] hover:text-foreground"
                   >
