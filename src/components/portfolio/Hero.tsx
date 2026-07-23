@@ -4,7 +4,7 @@ import { ArrowRight, Download, Mail } from "lucide-react";
 import { MagneticButton, Counter } from "./ui";
 import paulPhoto from "@/assets/paul-red-full.png";
 
-const roles = ["Machine Learning Engineer", "Data Scientist", "AI Solutions Builder"];
+const roles = ["Data Scientist", "Machine Learning Engineer"];
 
 function useTyping(words: string[]) {
   const [text, setText] = useState("");
