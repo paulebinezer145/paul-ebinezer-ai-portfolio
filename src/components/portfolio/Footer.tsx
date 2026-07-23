@@ -31,8 +31,8 @@ export function Footer() {
           <div>
             <h4 className="text-sm font-semibold">Connect</h4>
             <div className="mt-3 flex flex-col gap-2 text-sm text-muted-foreground">
-              <a href="#" className="hover:text-foreground">GitHub</a>
-              <a href="#" className="hover:text-foreground">LinkedIn</a>
+              <a href="https://github.com/paulebinezer145" target="_blank" rel="noopener noreferrer" className="hover:text-foreground">GitHub</a>
+              <a href="https://linkedin.com/in/paulebinezer" target="_blank" rel="noopener noreferrer" className="hover:text-foreground">LinkedIn</a>
               <a href="#" className="hover:text-foreground">Kaggle</a>
               <a href="#" className="hover:text-foreground">LeetCode</a>
             </div>
