@@ -46,7 +46,7 @@ const projects: Project[] = [
     outcomes: "Practiced EDA, visualization and building intuitive analytics.",
   },
   {
-    title: "AI Resume Analyzer",
+    title: "ML Resume Analyzer",
     tag: "NLP",
     summary: "Scores resumes against job descriptions using NLP.",
     overview: "An NLP application that parses resumes and matches them to roles with actionable feedback.",

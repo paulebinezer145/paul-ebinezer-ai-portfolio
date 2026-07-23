@@ -4,7 +4,7 @@ import { Briefcase, CheckCircle2 } from "lucide-react";
 const ready = [
   "Available for internships & full-time roles",
   "Strong foundation in Python, ML & Data Science",
-  "Hands-on with real, end-to-end AI projects",
+  "Hands-on with real, end-to-end ML projects",
   "Fast learner, collaborative and product-minded",
 ];
 
@@ -48,8 +48,8 @@ export function Experience() {
                   </li>
                 ))}
               </ul>
-              <div className="mt-8 grid grid-cols-3 gap-3">
-                {["Data Scientist", "ML Engineer", "AI Developer"].map((t) => (
+              <div className="mt-8 grid grid-cols-2 gap-3">
+                {["Data Scientist", "ML Engineer"].map((t) => (
                   <div key={t} className="glass rounded-xl p-3 text-center text-xs text-muted-foreground">
                     {t}
                   </div>

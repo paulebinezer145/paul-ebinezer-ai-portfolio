@@ -6,12 +6,12 @@ const timeline = [
   { year: "Step 02", title: "Learned Python", desc: "Mastered Python for scripting, automation and data workflows." },
   { year: "Step 03", title: "Entered Data Science", desc: "Explored statistics, data cleaning, EDA and visualization." },
   { year: "Step 04", title: "Learning Machine Learning", desc: "Regression, classification, clustering and model evaluation." },
-  { year: "Step 05", title: "Building AI Projects", desc: "Turning datasets into deployable, real-world AI solutions." },
+  { year: "Step 05", title: "Building ML Projects", desc: "Turning datasets into deployable, real-world ML solutions." },
   { year: "Step 06", title: "Preparing for Product Companies", desc: "Sharpening DSA, system design and interview readiness." },
 ];
 
 const pillars = [
-  { icon: Brain, title: "Passion for AI", desc: "Fascinated by how intelligent systems learn, reason and scale." },
+  { icon: Brain, title: "Passion for ML", desc: "Fascinated by how intelligent systems learn, reason and scale." },
   { icon: Target, title: "Why Data Science", desc: "I love turning messy data into decisions that create real value." },
   { icon: Rocket, title: "Career Objective", desc: "To engineer ML systems at a world-class technology company." },
   { icon: TrendingUp, title: "Always Learning", desc: "Continuously leveling up skills, tools and fundamentals." },
