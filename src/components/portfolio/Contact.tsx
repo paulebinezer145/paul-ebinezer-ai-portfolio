@@ -42,6 +42,8 @@ export function Contact() {
                   <a
                     key={s.label}
                     href={s.href}
+                    target={s.href.startsWith("http") ? "_blank" : undefined}
+                    rel={s.href.startsWith("http") ? "noopener noreferrer" : undefined}
                     aria-label={s.label}
                     className="grid h-11 w-11 place-items-center rounded-xl glass transition-colors hover:border-[color-mix(in_oklab,var(--glow)_50%,transparent)] hover:text-foreground"
                   >
