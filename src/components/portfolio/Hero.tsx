@@ -48,7 +48,7 @@ function HeroVisual() {
       <div className="absolute inset-[8%] grid place-items-center">
         <div className="group relative h-full w-full">
           {/* Solid red squircle shape — matches reference style */}
-          <div className="absolute inset-0 rounded-[38%_62%_58%_42%/48%_42%_58%_52%] bg-[#c41e3a] shadow-[0_0_60px_rgba(196,30,58,0.35)] transition-transform duration-700 group-hover:scale-105" />
+          <div className="absolute inset-0 rounded-[38%_62%_58%_42%/48%_42%_58%_52%] bg-white/15 shadow-[0_0_60px_rgba(255,255,255,0.15)] transition-transform duration-700 group-hover:scale-105" />
           {/* Clean frame with white border */}
           <div className="absolute inset-[3%] overflow-hidden rounded-[38%_62%_58%_42%/48%_42%_58%_52%] border-[3px] border-white/90">
             <img
