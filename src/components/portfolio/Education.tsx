@@ -26,15 +26,15 @@ export function Education() {
                 <GraduationCap className="h-6 w-6 text-[color-mix(in_oklab,var(--glow)_85%,white)]" />
               </div>
               <h3 className="mt-5 text-xl font-bold">Bachelor's Degree in Data Science</h3>
-              <p className="mt-2 text-sm text-muted-foreground">College Name — Placeholder</p>
+              <p className="mt-2 text-sm text-muted-foreground">Final Year Student</p>
               <div className="mt-6 grid grid-cols-2 gap-3">
                 <div className="glass rounded-xl p-4">
                   <div className="text-xs text-muted-foreground">Graduation</div>
-                  <div className="mt-1 font-display text-lg font-semibold">Year</div>
+                  <div className="mt-1 font-display text-lg font-semibold">2026</div>
                 </div>
                 <div className="glass rounded-xl p-4">
                   <div className="text-xs text-muted-foreground">CGPA</div>
-                  <div className="mt-1 font-display text-lg font-semibold">—</div>
+                  <div className="mt-1 font-display text-lg font-semibold">7.5</div>
                 </div>
               </div>
             </GlassCard>
