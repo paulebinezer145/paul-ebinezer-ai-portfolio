@@ -30,7 +30,7 @@ export function Education() {
               <div className="mt-6 grid grid-cols-2 gap-3">
                 <div className="glass rounded-xl p-4">
                   <div className="text-xs text-muted-foreground">Graduation</div>
-                  <div className="mt-1 font-display text-lg font-semibold">2026</div>
+                  <div className="mt-1 font-display text-lg font-semibold">2027</div>
                 </div>
                 <div className="glass rounded-xl p-4">
                   <div className="text-xs text-muted-foreground">CGPA</div>
