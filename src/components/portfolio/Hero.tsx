@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Download, Mail } from "lucide-react";
 import { MagneticButton, Counter } from "./ui";
-import paulPhoto from "@/assets/paul-red-full.png";
+import paulPhoto from "@/assets/paul-red-full.png.asset.json";
 
 const roles = ["Data Scientist", "Machine Learning Engineer"];
 
@@ -52,9 +52,9 @@ function HeroVisual() {
           {/* Clean frame with white border */}
           <div className="absolute inset-[3%] overflow-hidden rounded-[38%_62%_58%_42%/48%_42%_58%_52%] border-[3px] border-white/90">
             <img
-              src={paulPhoto}
+              src={paulPhoto.url}
               alt="Paul Ebinezer, Data Scientist and Machine Learning Engineer"
-              className="absolute inset-0 h-full w-full object-cover object-[50%_12%] saturate-[1.05] contrast-[1.05] transition-transform duration-700 group-hover:scale-105"
+              className="absolute inset-0 h-full w-full object-cover object-[50%_20%] saturate-[1.05] contrast-[1.05] transition-transform duration-700 group-hover:scale-105"
             />
           </div>
         </div>
