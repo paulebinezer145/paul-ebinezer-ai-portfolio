@@ -71,7 +71,7 @@ export function MagneticButton({
   onClick,
   href,
   target,
-ReL,
+rel?,
   download,
   variant = "primary",
 }: {
