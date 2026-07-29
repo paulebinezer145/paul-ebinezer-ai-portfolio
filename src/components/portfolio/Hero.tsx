@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Download, Mail } from "lucide-react";
 import { MagneticButton, Counter } from "./ui";
-import paulPhoto from "@/assets/paul-red-full.png";
+import paulPhoto from "@/assets/paul-red-full.png.asset.json";
 
 const roles = ["Data Scientist", "Machine Learning Engineer"];
 
