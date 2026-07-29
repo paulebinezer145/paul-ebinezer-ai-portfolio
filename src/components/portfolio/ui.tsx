@@ -70,12 +70,18 @@ export function MagneticButton({
   className,
   onClick,
   href,
+  target,
+ReL,
+  download,
   variant = "primary",
 }: {
   children: ReactNode;
   className?: string;
   onClick?: () => void;
   href?: string;
+  target?: string;
+  rel?: string;
+  download?: string | boolean;
   variant?: "primary" | "ghost" | "outline";
 }) {
   const ref = useRef<HTMLElement>(null);
@@ -106,6 +112,9 @@ export function MagneticButton({
     <Comp
       ref={ref as any}
       href={href}
+      target={target}
+      rel={rel}
+      download={download}
       onClick={onClick}
       onMouseMove={onMove}
       onMouseLeave={reset}
