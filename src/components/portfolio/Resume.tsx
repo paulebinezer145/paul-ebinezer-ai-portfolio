@@ -1,9 +1,15 @@
 import { Reveal, SectionHeading, GlassCard, MagneticButton } from "./ui";
 import { Download, FileText, ShieldCheck, Eye } from "lucide-react";
 import resumeAsset from "@/assets/paul-resume.docx.asset.json";
-
+import { useMemo } from "react";
 
 export function Resume() {
+  const previewUrl = useMemo(() => {
+    if (typeof window === "undefined") return resumeAsset.url;
+    const fileUrl = window.location.origin + resumeAsset.url;
+    return `https://view.officeapps.live.com/op/view.aspx?src=${encodeURIComponent(fileUrl)}`;
+  }, []);
+
   return (
     <section id="resume" className="section-pad relative">
       <div className="mx-auto max-w-6xl px-4">
@@ -31,13 +37,21 @@ export function Resume() {
                 in browser.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
-                <MagneticButton href={resumeAsset.url} variant="primary">
+                <MagneticButton
+                  href={resumeAsset.url}
+                  download={resumeAsset.original_filename}
+                  variant="primary"
+                >
                   <Download className="h-4 w-4" /> Download Resume
                 </MagneticButton>
-                <MagneticButton href={resumeAsset.url} variant="outline">
+                <MagneticButton
+                  href={previewUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  variant="outline"
+                >
                   <Eye className="h-4 w-4" /> Preview
                 </MagneticButton>
-
               </div>
             </div>
           </GlassCard>
