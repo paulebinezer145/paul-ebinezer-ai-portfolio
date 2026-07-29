@@ -54,7 +54,7 @@ function HeroVisual() {
             <img
               src={paulPhoto}
               alt="Paul Ebinezer, Data Scientist and Machine Learning Engineer"
-              className="absolute inset-0 h-full w-full object-cover object-[50%_12%] saturate-[1.05] contrast-[1.05] transition-transform duration-700 group-hover:scale-105"
+              className="absolute inset-0 h-full w-full object-cover object-[50%_20%] saturate-[1.05] contrast-[1.05] transition-transform duration-700 group-hover:scale-105"
             />
           </div>
         </div>
