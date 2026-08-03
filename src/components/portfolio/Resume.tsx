@@ -4,11 +4,23 @@ import resumeAsset from "@/assets/paul-resume.docx.asset.json";
 import { useMemo } from "react";
 
 export function Resume() {
-  const previewUrl = useMemo(() => {
+  const fileUrl = useMemo(() => {
     if (typeof window === "undefined") return resumeAsset.url;
-    const fileUrl = window.location.origin + resumeAsset.url;
-    return `https://view.officeapps.live.com/op/view.aspx?src=${encodeURIComponent(fileUrl)}`;
+    const origin = window.location.origin;
+    return resumeAsset.url.startsWith("http")
+      ? resumeAsset.url
+      : `${origin}${resumeAsset.url}`;
   }, []);
+
+  const previewUrl = useMemo(
+    () => `https://view.officeapps.live.com/op/view.aspx?src=${encodeURIComponent(fileUrl)}`,
+    [fileUrl]
+  );
+
+  const handlePreview = (e: React.MouseEvent) => {
+    e.preventDefault();
+    window.open(previewUrl, "_blank", "noopener,noreferrer");
+  };
 
   return (
     <section id="resume" className="section-pad relative">
@@ -48,6 +60,7 @@ export function Resume() {
                   href={previewUrl}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={handlePreview}
                   variant="outline"
                 >
                   <Eye className="h-4 w-4" /> Preview
