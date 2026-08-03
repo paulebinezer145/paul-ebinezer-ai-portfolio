@@ -77,7 +77,7 @@ rel,
 }: {
   children: ReactNode;
   className?: string;
-  onClick?: () => void;
+  onClick?: (e: React.MouseEvent) => void;
   href?: string;
   target?: string;
   rel?: string;
